@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+    padding: 20px 30px;
+}
+
+legend {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: black;
+}
+
+div {
+    margin-top: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    font-size: 1.375rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+button:not(button.third-party) {
+    appearance: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+button.third-party {
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    background-color: black;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    cursor: pointer;
+}
+
+button.third-party>img {
+    display: block;
+    width: 20px;
+}
+
+button.third-party>span {
+    text-align: center;
+}
+
+button:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+p {
+    text-align: center;
+}

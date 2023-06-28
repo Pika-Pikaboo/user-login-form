@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+}
+
+table tr:nth-child(even),
+th {
+    background-color: #f0f0f0;
+}
